@@ -19,9 +19,9 @@ const merge = (left, right) => {
     while(left.length && right.length) {
         //finds the lower value
         if(left[0] <= right[0]){
-            mergedArray.push(left.shift()) //adds the left value
+            mergedArray.push(left.shift()) //adds the first of the left value
         }else{
-            mergedArray.push(right.shift()) //adds the right value
+            mergedArray.push(right.shift()) //adds the first of right value
         }
     } //checks if the array is empty 
     while(left.length){
@@ -38,7 +38,8 @@ const newArray = () => {
     for(i = 0; theArray.length < 100; i ++){
         theArray.push(Math.floor(Math.random() * 101))
     }
-    return theArray
+    // console.log(theArray)
+    return theArray //returns the new array 
 }
 
 console.log(mergeSort(newArray()))

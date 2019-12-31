@@ -6,11 +6,11 @@ const findStart = (start) => {
         if(alphabet[i] == start){
             let endHalf = alphabet.slice(0, i)
             let frontHalf = alphabet.slice(i, 26)
-            newAlphabet.join(frontHalf)
-            newAlphabet.join(endHalf)
+            frontHalf.push(endHalf)
+            newAlphabet.push(frontHalf.join())
         }
     }
-    console.log(newAlphabet)
+    return newAlphabet.join().split(',')
 }
 
 // console.log(alphabet.length)

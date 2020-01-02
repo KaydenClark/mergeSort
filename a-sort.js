@@ -15,4 +15,6 @@ const findStart = (start) => {
 
 // console.log(alphabet.length)
 
-console.log(findStart('y'))
+// console.log(findStart('y'))
+
+var exports = module.exports = {findStart}

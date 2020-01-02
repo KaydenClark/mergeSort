@@ -1,3 +1,5 @@
+const findStart = require('./a-sort')
+
 const mergeSort = (array) => {
     let length = array.length
     //check to see if it can be split
@@ -43,3 +45,4 @@ const newArray = () => {
 }
 
 console.log(mergeSort(newArray()))
+console.log(findStart('y'))
